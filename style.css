@@ -1,0 +1,358 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body,html
+{
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    width:100vw;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container
+{
+    width:74vw;
+    /* height: 100vh; */
+    background-color: azure;
+    display: flex;
+}
+.left
+{
+    width:25vw;
+    /* height: 50vh; */
+    height: 100vh;
+    /* border: 1px solid blue; */
+    /* background-color: linear gradient();
+} */
+}
+.image-bg-main
+{
+    width: 24vw;
+    height: 100vh;
+}
+.front-card-image
+{
+    position: fixed;
+    top:20vh;
+    left: 21vw;
+    width: 24vw;
+    height: 28vh;
+}
+.front-card-logo
+{
+    position: fixed;
+    z-index: 2;
+    top: 23vh;
+    left: 23vw;
+    width: 4vw;
+    height: 5vh;
+}
+.card-number
+{
+    position: fixed;
+    z-index: 2;
+    top:37vh;
+    left: 23vw;
+    color: rgb(244, 255, 255);
+    letter-spacing: 4px;
+    font-size: 21px;
+}
+.card-details
+{
+    position: fixed;
+    z-index: 2;
+    top: 44vh;
+    left: 23vw;
+    color: rgb(244, 255, 255);
+    /* letter-spacing: 4px; */
+    font-size: 10px;
+}
+.card-details-1
+{
+    position: fixed;
+    z-index: 2;
+    top: 44vh;
+    left: 40vw;
+    color: rgb(244, 255, 255);
+        /* letter-spacing: 4px; */
+    font-size: 10px;
+
+}
+.image-bg-mobile
+{
+    display: none;
+}
+.back-card-image
+{
+    z-index: 2;
+    position: fixed;
+    top:52vh;
+    left: 26vw;
+    width: 24vw;
+    height: 28vh;
+}
+.cvv
+{
+    position:fixed;
+    z-index: 2;
+    top:65vh;
+    left:45vw;
+    color: rgb(244, 255, 255);
+}
+.right
+{
+    position: fixed;
+    right:25vw;
+    top:29vh;
+}
+#name,
+#number {
+    width: 20vw;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.expired-date
+{
+    width:3.75vw;
+    height: 4vh;
+}
+.form-read > *
+{
+    padding-bottom: 0.5vh;
+    border-radius: 10px;
+    font-size: 9px;
+    /* font-weight: bold; */
+}
+#cvc
+{
+    margin-left: 5.5vw;
+}
+#cvc-number
+{
+    margin-left: 2.5vw;
+    width:9vw;
+    height: 4vh;
+}
+#submit
+{
+    margin-top: 4vh;
+    width: 20vw;
+    height: 5vh;
+    color: rgb(237, 229, 239);
+    background-color: rgb(34, 9, 48);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+#continue
+{
+    margin-top: 4vh;
+    width: 20vw;
+    height: 5vh;
+    color: rgb(237, 229, 239);
+    background-color: rgb(34, 9, 48);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+::placeholder
+{
+    padding-left: 2vh;
+    font-size: 15px;
+}
+#name,#number,#cvc-number,.expired-date
+{
+    font-size: 15px;
+    color: rgb(100, 92, 106);
+    border: 1px solid rgb(223, 223, 223);
+}
+.submit-read
+{
+    display: none;
+
+}
+.front-card,.back-card
+{
+    position: fixed;
+}
+@media (max-width:975px) {
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        position: relative;
+    }
+    .image-bg-main
+    {
+        display: none;
+    }
+    .image-bg-mobile
+    {
+        display: block;
+        width:100vw;
+        height: 35vh;
+    }
+    .right
+    {
+        position: fixed;
+        top: 50vh;
+        left: 5vw;
+        width: 50vw;
+    }
+    .front-card
+    {
+        position: fixed;
+        z-index: 5;
+    }
+    .front-card-image
+    {
+        position: fixed;
+        top:19vh;
+        width:80vw;
+        height: 25vh;
+        left: 5vw;
+        z-index: 38;
+    }
+    .front-card-logo
+    {
+        width:16vw;
+        height: 5vh;
+        left: 10vw;
+        z-index: 38;
+    }
+    .card-number
+    {
+        /* position: fixed; */
+        left:8vw;
+        top:32vh;
+        z-index: 38;
+    }
+    .card-details
+    {
+        left:9vw;
+        top:40vh;
+        z-index: 38;
+    }
+    .card-details-1
+    {
+        left:70vw;
+        top:40vh;
+        z-index: 38;
+    }
+    .form-read
+    {
+        z-index: 0;
+        width:90vw;
+    }
+    .back-card-image
+    {
+        width:72vw;
+        height: 25vh;
+        top:4vh;
+        left:19vw;
+        z-index: -1;
+        position: fixed;
+    }
+    .cvv{
+        position: fixed;
+        top: 15vh;
+        left: 74vw;
+    }
+    .form-read > *
+    {
+        font-size: 12px;
+    }
+    #name,#number
+    {
+        width: 85vw;
+        height: 5.3vh;   
+    }
+    .expired-date
+    {
+        width: 18vw;
+        height: 5.5vh;
+    }
+    #cvc
+    {
+        margin-left: 11vw;
+    }
+    #cvc-number
+    {
+        width: 43vw;
+        height: 5.2vh;
+    }
+    #submit
+    {
+        width: 85vw;
+        height: 8vh;
+    }
+    .submit-read
+    {
+        width: 85vw;
+        text-align: center;
+    }
+    .submit-thankyou
+    {
+        margin-top: 3vh;
+        letter-spacing: 1px;
+        margin-bottom: 2vh;
+    }
+    .submit-details
+    {
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+    #continue
+    {
+        margin-top: 6vh;
+        width: 85vw;
+        height: 8vh;
+    }
+    .button
+     {
+        /* margin-top: 0.5vh; */
+        margin-left: 50vw;
+    }
+    .expire 
+    {
+        margin-left: 5vw;
+        margin-top: 1vh;
+    }
+
+}
+.red
+{
+    color:red;
+    font-size:12px;
+    margin-top: -10px;
+}
+/* .expire
+{
+    /* margin-top: 0.5vh; */
+    /* margin-left: 11vw; */
+/* }  */
+.expire
+{
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+.button
+{
+    margin-left: 11vw;
+}
